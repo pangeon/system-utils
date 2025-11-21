@@ -29,3 +29,5 @@ Powershell scripts for Windows and bash Linux tools.
 - **media-spiltter**: command separates video and image files to and moves them to different locations, example *source* -> *destination*:
 
       media-splitter '/media/cecherz/PATRIOT P210/ALBUMY' '/media/cecherz/PATRIOT P210/VIDEO'
+
+- **new-script**: script create new Bash/Linux command in location: */usr/local/bin/*
