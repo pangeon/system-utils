@@ -1,0 +1,32 @@
+#!/bin/bash
+time_mark=$(date "+DATE: %Y-%m-%d | TIME: %H:%M:%S")
+author="AUTHOR: $(whoami)"
+diary_path="$HOME/note"
+note_name="note_$(date "+%Y-%m-%d_%H-%M-%S").txt"
+
+if [ -d "$diary_path" ]; then
+	if [[ ${1} == "-nano" || ${1} == "-write" ]]; then
+		touch "$diary_path/$note_name"
+		echo "create $diary_path/$note_name"
+	else
+		echo "Incorrect argument"
+	fi
+
+	case "${1}" in
+	"-nano")
+		echo -e $author"\n\n"${time_mark} > "$diary_path/$note_name"
+		nano $diary_path/$note_name
+		;;
+	"-write")
+		echo -e $author"\n"${2}"\n"${time_mark} > "$diary_path/$note_name"
+		;;
+	*)
+		echo "Choose option: -nano | -write"
+		;;
+	esac
+else
+	mkdir "$diary_path"
+	echo "create $diary_path run script again..."
+fi
+
+cat "$diary_path/$note_name"

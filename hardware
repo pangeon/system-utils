@@ -1,0 +1,108 @@
+#!/bin/bash
+content="
+::INWENTARZ SPRZĘTU KAMILA CECHERZA::
+
+=========================
+1. KOMPUTER GŁÓWNY
+=========================
+CPU: Intel Core i5-10400F
+GPU: NVIDIA GeForce GTX 1060 6GB
+Płyta główna: Gigabyte B460M DS3H
+RAM:
+- 2x8 GB Crucial DDR4
+- 2x8 GB Kingston Fury RGB DDR4-2400
+
+Dyski:
+- Samsung 970 EVO Plus NVMe 1TB
+- Adata SU630 2TB
+- Patriot P210 2TB
+- Toshiba P300 1TB HDD
+
+Zasilacz: be quiet! Pure Power 12M 750W
+Obudowa: SilentiumPC Gladius M20
+Monitor: GIGABYTE G24F 2 (23.8 cali, 165 Hz)
+
+=========================
+2. KOMPUTER STARY (2008)
+=========================
+CPU: Intel Core 2 Duo E8400
+GPU: GeForce 9600 GT 512 MB
+RAM: 4 GB DDR2 800 MHz
+Płyta główna: Gigabyte GA-EP31
+Zasilacz: Modecom Feel III 500W
+Obudowa: Raidmax Sagitta
+
+Dyski:
+- SanDisk SSD 128 GB
+- ADATA SU800 128 GB
+
+Monitor: Samsung LS24F350FHUXEN
+Napęd: LG DVD-RW
+
+=========================
+3. URZĄDZENIA MOBILNE / SIECIOWE
+=========================
+- Xiaomi Mi 9T
+- Huawei Y5 2018
+- Raspberry Pi 4B (MalinaKodi)
+- Chromecast 4
+- Router ISP CH7465LG-LC
+- Laptop Pentium (PENTIUM-M900)
+- ThinkPad X240
+- Netbook Atom (ATOM-N470)
+
+=========================
+4. KONSOLA
+=========================
+- Nintendo SNES PAL (SNSP-001A(FRG), SNSP-NOE)
+
+=========================
+5. PERYFERIA
+=========================
+
+MYSZKI:
+- Logitech MX Master 3S
+- Logitech G502 X
+- Logitech M170
+
+KLAWIATURY:
+- Tracer Gamezone Inglot TRAKLA45549
+- Logitech K235
+- Tracer Inglot 45549
+- BK3001 wireless
+- Roccat Horde ROC-12-301-BK
+
+TABLET GRAFICZNY:
+- One by Wacom M CTL-672-N
+
+MIKROFON:
+- Mozos MKIT-700PRO V2
+
+SŁUCHAWKI:
+- Corsair HS70 PRO Wireless Carbon
+
+KAMERA:
+- Logitech C920 Pro HD 1080p
+
+KONTROLERY / URZĄDZENIA:
+- Moga XP5-X Plus (pad)
+- TP-Link TL-WN821N (zewnętrzna karta sieciowa)
+- Icy Box IB-1232CL-U3 (stacja dokująca/klonująca)
+
+AUDIO:
+- Creative T100
+- JBL Flip 5
+
+=========================
+6. DYSKI ZEWNĘTRZNE - HDD
+=========================
+- WD My Passport Ultra 1.5TB (WDBBKD0015BBK-0A)
+- Verbatim 1TB (53023 1TB STYDCC)
+- WD 500GB (WDBPCK5000ABK-03)
+
+=========================
+7. DYSKI HDD - ODPIĘTE
+=========================
+- WD500AAKX 500GB
+"
+echo "$content"

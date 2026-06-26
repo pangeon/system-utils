@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# --- montowanie dysków ---
+echo "Montowanie dysku SSD NTFS..."
+sudo mount -t ntfs-3g /dev/sdb2 /mnt/ntfs -o noatime,big_writes,uid=1000,gid=1000
+
+echo "Montowanie dysku HDD..."
+sudo mount /dev/sda1 /mnt/backup
+
+# --- aktualizacja repozytoriów restic ---
+echo "Aktualizacja repozytorium ALBUMY..."
+restic -r /mnt/backup/ALBUMY backup /mnt/ntfs/MEDIA/ALBUMY --verbose
+
+echo "Aktualizacja repozytorium VIDEO..."
+restic -r /mnt/backup/VIDEO backup /mnt/ntfs/MEDIA/VIDEO --verbose
+
+echo "Backup zakończony."

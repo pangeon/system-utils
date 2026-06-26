@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "Mam $[$(date +%Y)-$1] lat, $[($(date +%Y)-$1)*365] dni, $[($(date +%Y)-$1)*365*24] godzin."

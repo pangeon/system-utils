@@ -1,0 +1,14 @@
+#!/bin/bash
+sudo apt -q update
+sudo apt -y upgrade
+sudo apt -y full-upgrade
+sudo apt -y autoremove
+sleep 0.5
+
+## Again :D
+sudo apt -y -q autoclean
+sudo apt -y clean
+sudo apt -q update
+sudo apt -y upgrade
+sudo apt -y full-upgrade
+sudo apt -y autoremove --purge

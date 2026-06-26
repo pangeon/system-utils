@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "AKTUALIZACJA:"
+echo 'polecenie: restic-update'
+echo "SPRAWDZENIE"
+echo 'sudo restic -r "/media/cecherz/286a759c-6554-4eeb-b54c-1df4bffa4ce3/VIDEO" snapshots'
+echo 'sudo restic -r "/media/cecherz/286a759c-6554-4eeb-b54c-1df4bffa4ce3/ALBUMY" snapshots'
+echo "pass: 860215"

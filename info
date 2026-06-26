@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Your scripts path is: /usr/local/bin/"
+echo "All commands list here"
+echo "---------------------"
+ls /usr/local/bin
+echo "---------------------"
